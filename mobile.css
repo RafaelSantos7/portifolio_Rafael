@@ -1,0 +1,153 @@
+@media (max-width: 1024px) {
+  .showcase-container > h1 {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 3.3rem;
+  }
+
+  .showcase-container > p {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .about-me-content > img {
+    width: 200px;
+    height: 200px;
+    margin-right: 0;
+  }
+
+  .about-me-content p {
+    margin-top: 15px;
+    font-size: 0.875rem;
+    text-align: center;
+  }
+
+  .about-me-content {
+    flex-direction: column;
+  }
+
+  .skills-content {
+    flex-direction: column;
+  }
+
+  /* Projetos */
+  .project-content {
+    margin-top: 40px;
+  }
+
+  .project-item a {
+    flex-direction: column;
+  }
+
+  .project-content .project-item:nth-child(2),
+  .project-content .project-item:nth-child(4) {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .project-content .project-item:nth-child(2) img,
+  .project-content .project-item:nth-child(4) img {
+    margin-left: 0;
+    order: 1;
+  }
+
+  .project-content .project-item:nth-child(2) .project-text,
+  .project-content .project-item:nth-child(4) .project-text {
+    order: 2;
+  }
+
+  .project-text {
+    margin-left: 0;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .project-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .project-text p {
+    font-size: 0.85rem;
+    margin-top: 10px;
+  }
+
+  /* formulario */
+  .content-form {
+    margin-top: 40px;
+  }
+
+  /*  footer */
+  .footer-container {
+    text-align: center;
+  }
+
+  /*  utilites */
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .section-container {
+    padding: 30px;
+  }
+}
+
+/* Estilos para telas menores que 1020px */
+@media (max-width: 1020px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.5s ease;
+    padding-top: 80px;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .navbar-container > ul > li {
+    margin: 20px 0;
+    opacity: 1;
+    font-size: 1.2rem;
+  }
+
+  .navbar-container > ul {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+}
+
+/* Versão para telas pequenas (até 390px) */
+@media (max-width: 620px) {
+  .showcase-container h1 {
+    white-space: normal; /* Permite quebra de linha */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .showcase-container h1 span {
+    margin-top: 5px; /* Espaço entre as linhas */
+  }
+}
