@@ -176,6 +176,14 @@ html {
   line-height: 2rem;
 }
 
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 365px;
+  margin-top: 30px;
+  gap: 15px;
+}
+
 .skill-item {
   display: flex;
   flex-direction: column;
